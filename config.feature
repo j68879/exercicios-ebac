@@ -9,33 +9,17 @@
             Contexto: Dado que selecionei um produto que desejo comprar
 
 
-            Cenário: Selecionar cor, tamanho e quantidade de um produto e adicionar ao carrinho
-            E seleciono a cor azul
-            E seleciono o tamanho M
-            E seleciono a quantidade igual a 2
-            Quando clicar no botão adicionar ao carrinho
-            Então o produto deverá ser exibido no carrinho com a cor, tamanho e quantidade selecionados
-
-
             Cenário: Selecionar 12 produtos por venda
-            E seleciono a cor azul
-            E seleciono o tamanho M
-            E seleciono a quantidade igual a 12
-            Quando clicar no botão adicionar ao carrinho
+            Quando seleciono cor, tamanho e a quantidade igual a 12 e clico em adicionar ao carrinho
             Então o produto não deverá ser adicionado ao carrinho e o sistema deverá exibir uma mensagem informando
             que o limite de produto por venda é 10
 
             Cenário: Selecionar 10 produtos por venda
-            E seleciono a cor azul
-            E seleciono o tamanho M
-            E seleciono a quantidade igual a 10
-            Quando clicar no botão adicionar ao carrinho
+            Quando seleciono cor, tamanho e a quantidade igual a 10 e clico em adicionar ao carrinho
             Então o produto deverá ser exibido no carrinho com a cor, tamanho e quantidade selecionados
 
             Esquema do Cenário: Selecionar variações do produto
-            Quando selecionar a cor <cor>
-            E o tamanho <tamanho>
-            E a quantidade <quantidade>
+            Quando selecionar a cor <cor>, tamanho <tamanho> e quantidade <quantidade>
             Então deve ser possível adicionar o item ao carrinho
 
             Exemplos:
@@ -53,9 +37,7 @@
 
 
 Cenário: Clicar no botão limpar
-E seleciono a cor azul
-E seleciono o tamanho M
-E seleciono a quantidade igual a 10
+Quando seleciono, cor, tamanho e quantidade
 Quando clicar no botão limpar
 Então o sistema deve voltar ao estado original
 

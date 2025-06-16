@@ -9,9 +9,7 @@
 
 
             Esquema do Cenário: Selecionar usuario e senha válidos
-            E informo o usuario <usuario>
-            E informo a senha <senha>
-            Quando clicar no botão login
+            Quando informo o usuario <usuario> e a senha <senha> e clico no botão login
             Então devo ser redirecionado para a tela de checkout
 
             Exemplos:
@@ -22,9 +20,7 @@
 
 
             Esquema do Cenário: Selecionar usuario e/ou senha inválidos
-            E informo o usuario <usuario>
-            E informo a senha <senha>
-            Quando clicar no botão login
+            Quando informo o usuario <usuario> e informo a senha <senha> e clico no botão login
             Então deve ser exibida a mensagem de alerta “Usuário ou senha inválidos”
 
             Exemplos:
